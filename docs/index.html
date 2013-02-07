@@ -70,12 +70,30 @@
     </div>
 
 <div class="jumbotron masthead">
-  <div class="container">
-    <h1>jeff rock</h1>
-<div id="card" class="card"><div class="frontView"> <img src="http://www.w3.org/html/logo/downloads/HTML5_Logo_256.png"><span>Hacks</span></div><div class="backView">Rocks!</div></div>
+  <div class="container viewPort">
+  
+        <div id="card" class="card controls">
+            <div class="frontView"> 
+                <img src="http://www.w3.org/html/logo/downloads/HTML5_Logo_256.png">
+                <span>Hacks</span>
+                
+            </div>
+            <div class="backView">Rocks!</div>
+                    
+        </div>
 
 
+<script>
+    
+    
+    document.querySelector('.controls').addEventListener('click', function(){
+    var elem = document.querySelector('.card');
+    elem.className = (elem.className == 'card')?'card flipped':'card';
+    
+    
+});
 
+</script>
 <style>
     
      .viewPort {
@@ -153,18 +171,7 @@
     <!-- Footer
     ================================================== -->
     <footer class="footer">
-      <div class="container">
-        <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-        <p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-        <ul class="footer-links">
-          <li><a href="http://blog.getbootstrap.com">Blog</a></li>
-          <li class="muted">&middot;</li>
-          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
-          <li class="muted">&middot;</li>
-          <li><a href="https://github.com/twitter/bootstrap/wiki">Roadmap and changelog</a></li>
-        </ul>
-      </div>
+
     </footer>
 
 
